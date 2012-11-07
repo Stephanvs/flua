@@ -4,17 +4,17 @@ Flua is a very simple and very lightweight testing framework for Lua. The main f
 
 # Getting started
 
-The framework for now requires you to `"require flua"` in your test script.
+The framework for now requires you to `require "flua"` in your test script.
 
 Next define your testscript as follows:
 
 ```lua
-    flua.testcase("sample", function ()
+flua.testcase("sample", function ()
 
-		assert.isTrue(true);
-		assert.isFalse(false);
+	assert.isTrue(true);
+	assert.isFalse(false);
 
-	end);
+end);
 ```
 
 ## Explicitly failing a test
